@@ -1,7 +1,9 @@
+
 .banner{
     color:white;
     object-fit: contain;
     height: 480px;
+    background-color:rgba(255, 0, 0, 0.2);
     
 }
 
