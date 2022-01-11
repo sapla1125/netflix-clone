@@ -30,3 +30,14 @@
     width: 3%;
     object-fit: contain;
 }
+
+
+@media only screen and (max-width: 450px) {
+    .nav__logo {
+        width: 30%;
+    }
+    .nav__avatar{
+        width: 8%
+    }
+
+  }
