@@ -3,17 +3,16 @@
     color:white;
     object-fit: contain;
     height: 480px;
-    
-    
 }
 
 
 .banner__contents{
-
+    position: relative;
     margin-left: 80px;
-    padding-top: 140px;
-    height:190px;
-    
+    top: 10rem;
+    background-color: rgba(0,0,0, 0.4);
+    display: inline-block;
+    padding: 0px 10px;
 }
 
 .banner__title{
@@ -54,6 +53,8 @@
 }
 
 .banner__fadeBottom{
+    position: relative;
+    bottom: -131px;
     height:9.4rem;
     background: linear-gradient(
         180deg,transparent,rgba(37,37,37,.61),#111);

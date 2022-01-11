@@ -28,6 +28,7 @@ function Banner() {
     }
 
     return (
+        <div>
         <header className="banner "
             style={{ backgroundSize: "cover",
             backgroundImage:`url(
@@ -37,6 +38,7 @@ function Banner() {
 
             }}
         >
+        
 
             <div className="banner__contents">
                 <h1 className="banner__title">
@@ -51,8 +53,9 @@ function Banner() {
                 
             </div>   
             <div className="banner__fadeBottom" />
-
-        </header>
+            </header>
+            </div>
+        
     )
 }
 
