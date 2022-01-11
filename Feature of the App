@@ -1,0 +1,7 @@
+Welcome to REACT App called Netflix-Clone. It is fetching contents via TMDB Api.
+
+This website is build in REACT and using Firebase as Hosting. There are different features of this web app as follows:-
+1. NavBar- Fixed navbar content with Netflix logo and avatar logo. Once page is scrolled to 300px black background comes over in the navbar menu.
+2. HeroImage/Banner - This is fetching dynamic content once page is refreshed the top image/movie changes, fetching random movies everytime by a random function.
+3. Rows of Movies - These are also fetched by API and cool part is using React-Youtube plugin, and some function this fetches movie trailors once clicked on the 
+                    movie. 
