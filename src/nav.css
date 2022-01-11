@@ -3,7 +3,7 @@
     top: 0;
     width:100%;
     padding: 20px;
-    height:20px;
+    height:30px;
     z-index: 1;
     display:flex;
     justify-content: space-between;
@@ -19,13 +19,14 @@
 }
 .nav__logo{
     position:fixed;
-    left: 20px;
-    width: 80px;
+
+    left: 50px;
+    width: 10%;
     object-fit: contain;
 }
 .nav__avatar{
     position:fixed;
-    right: 20px;
-    width: 30px;
+    right: 50px;
+    width: 3%;
     object-fit: contain;
 }
