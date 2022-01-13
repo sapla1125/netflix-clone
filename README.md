@@ -1,71 +1,19 @@
-# Getting Started with Create React App
+# Netflix Clone REACT APP
+## https://netflix-clone-3cd7b.web.app
+Netflix Clone is a web app with front end built in REACT and is fetching its data from TMDB API. Hosted on firebase, below are several screenshots and features of the App. It is fully responsive and contents are fecthed dynamically from the API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ScreenShots and Features
+![Screen Shot 2022-01-13 at 1 28 59 PM](https://user-images.githubusercontent.com/66316798/149388396-ae9f0765-caf9-4234-a08b-4ac995be7fe6.png)
+### Navigation Bar -
+Navigation bar is a fixed with Netflix logo and Avatar Logo on the right. Once page is scrolled down the black background behind Nav-bar comes in, kick in at 300px and when scrolled up and reaches 300px the black background disappears making the top image of featured movie more visible.
+### Featured Movie Image/Contents
+This is a dynamc image and changes on every refresh, which is fetched from the API randomly with currently set to Trending Now movies but can be chaged to any movie genre with just couple changes. With contents of the movie like movie title and descriptions are also fetched dynamically with respect to the image. The image description is truncated to 150 words, giving it a more cleaner look. Added a background overlay color to just the text making it more clearer to read and keeping rest of the image more brighter.
 
-## Available Scripts
+![Screen Shot 2022-01-13 at 1 29 10 PM](https://user-images.githubusercontent.com/66316798/149389384-b10c58e3-fefb-47f3-9e25-5da0e7eda8f3.png)
+### Movie Rows
+All the rows are fetched dynmaically as well from the API and are using seperate row component with Props for row titles, and using map function in the API array to get all the movies and images displayed automatically. All the rows are scrollable as in real Netflix Website and have a really cool transition effects on hover.
+You will see the Netflix Originals section images are slightly bigger and differnt type of image is displayed for this, using smae row component but a seperate CSS class is used on the same HTML components with if else statements. 
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# netflix-clone
+![Screen Shot 2022-01-13 at 1 29 35 PM](https://user-images.githubusercontent.com/66316798/149390033-9b256c06-bc76-419e-b438-ded989aa27b4.png)
+### Movie Trilors
+Once cliked on the movies banner the movie trailor part shows under the row and clicking the movie banner again makes it disappear. React-Youtube repository is used to get movie trailors fetched from Youtube directly and is happening dynamically for all the movies, youtube searches for the movie with the movie title automatically and displays the trailor of the movie if found with matching name, as it is fetched from an API some movie names/titles are not appropriate or according to real movies and youtube cannot look for them making it not show and log the error in console in these cases.
